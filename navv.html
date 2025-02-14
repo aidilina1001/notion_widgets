@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			  font-family: "Noto Serif SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 2px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d47257;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> 回到主页</a>
+		<a id="target" onclick="navigate(this.id)" href="#"> <i class="fa-sharp-duotone fa-solid fa-bullseye"></i> 任务日志</a>
+		<a id="movement" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-solid fa-list-check"></i> 行动管理</a>
+		<a id="backpack" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-solid fa-bag-shopping"></i> 我的背包</a>
+		<a id="friend" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-solid fa-people-robbery"></i> 我的队友</a>
+		<a id="record" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-solid fa-atom"></i> 生命记录仪</a>
+		<a id="work" onclick="navigate(this.id)" href="#"> <i class="fa-duotone fa-solid fa-comments"></i> 创意工坊</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Diane-s-2025-1662e5733eb8806ebf32da507b9bb863", '_blank').focus();
+			else if (id == 'target')
+				window.open("https://www.notion.so/1672e5733eb8802489d8d447882e8d66", '_blank').focus();
+			else if (id == 'movement')
+				window.open("https://www.notion.so/1672e5733eb8801ab9e9fcaa1bb4ad6d", '_blank').focus();
+			else if (id == 'backpack')
+				window.open("https://www.notion.so/1672e5733eb880c2ac1edbf19db1c5cf", '_blank').focus();
+			else if (id == 'friend')
+				window.open("https://www.notion.so/1672e5733eb8806bbb53fb0cccd6f8ee", '_blank').focus();
+			else if (id == 'record')
+				window.open("https://www.notion.so/1672e5733eb8802d8bc0dfcde1799f3e", '_blank').focus();
+			else if (id == 'work')
+				window.open("https://www.notion.so/1672e5733eb880c08314caa6f82bdea8", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
